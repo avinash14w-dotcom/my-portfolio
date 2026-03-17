@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collaboration Portfolio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.btn {
+  background: #3b82f6;
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 350px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background: #22c55e;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>My Brand</h2>
+</header>
+
+<section class="hero">
+  <h1>Let's Collaborate 🚀</h1>
+  <p>Open for brand deals, promotions & creative projects</p>
+  <a href="#contact" class="btn">Hire Me</a>
+</section>
+
+<section class="section">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a digital creator active on Facebook. I collaborate with brands and help them grow with engaging content.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Services</h2>
+  <div class="pricing">
+
+    <div class="card">
+      <h3>Promotion</h3>
+      <p>Brand promotion on my platform</p>
+    </div>
+
+    <div class="card">
+      <h3>Paid Collaboration</h3>
+      <p>Sponsored posts & shoutouts</p>
+    </div>
+
+    <div class="card">
+      <h3>Creative Content</h3>
+      <p>Unique and engaging content creation</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why Choose Me</h2>
+  <div class="card">
+    <p>✔ High engagement<br>✔ Creative ideas<br>✔ Trusted collaborations</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>My Facebook</h2>
+  <div class="card">
+    <a href="https://www.facebook.com/share/1XDPpvAfCD/" target="_blank">Visit My Profile</a>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Me</h2>
+  <div class="card">
+    <form onsubmit="sendMsg(event)">
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="msg"></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 My Portfolio | All Rights Reserved</p>
+</footer>
+
+<script>
+function sendMsg(e){
+  e.preventDefault();
+  document.getElementById("msg").innerText = "Message Sent Successfully ✅";
+}
+</script>
+
+</body>
+</html>
